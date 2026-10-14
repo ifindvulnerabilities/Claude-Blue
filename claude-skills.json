@@ -1,0 +1,92 @@
+{
+  "name": "claude-blue",
+  "version": "0.1.0",
+  "license": "MIT",
+  "principles": "PRINCIPLES.md",
+  "skills": [
+    {
+      "name": "defensive-detection-rule-review",
+      "category": "detection",
+      "path": "Skills/detection/defensive-detection-rule-review",
+      "description": "Peer-reviews an existing detection rule, hunting query or regex written by a defender \u2014 Sigma, KQL, SPL, EQL, YARA, Suricata or regex \u2014 for logic errors, evasion gaps, false-positive risk, performance and documentation. Use when someone pastes a rule or query and asks \"review this\", \"will this catch X\", \"why isn't this firing\" or \"is this regex right\". Reviews and explains; the author decides what to change."
+    },
+    {
+      "name": "defensive-config-review",
+      "category": "hardening",
+      "path": "Skills/hardening/defensive-config-review",
+      "description": "Reviews security configuration that a defender pastes \u2014 cloud IAM and bucket policies, firewall and security-group rules, Group Policy and audit-policy settings, conditional access policies, SSH/sshd, web server headers, Kubernetes RBAC \u2014 and explains risks, misconfigurations and logging gaps. Use when someone shares a policy, rule set or config export and asks \"is this secure\", \"what's wrong with this\" or \"review this config\"."
+    },
+    {
+      "name": "defensive-threat-intel-review",
+      "category": "intel",
+      "path": "Skills/intel/defensive-threat-intel-review",
+      "description": "Helps a defender read and apply a threat intelligence report, vendor advisory, CISA alert or vulnerability bulletin \u2014 summarising key behaviours, proposing candidate ATT&CK mappings for analyst verification, extracting IOCs as data, and asking what is relevant to the organisation. Use when someone shares a threat report, blog, advisory or CVE and asks what it means for them, for a summary, or for ATT&CK mapping."
+    },
+    {
+      "name": "defensive-incident-summary-review",
+      "category": "ir",
+      "path": "Skills/ir/defensive-incident-summary-review",
+      "description": "Reviews an analyst-written incident summary, report or executive brief against the investigation notes and evidence, checking for omitted facts, unsupported claims, contradictions, unclear impact and audience fit. Use when someone shares a draft incident report, case summary, post-incident write-up or stakeholder update and asks for a review, a check, or help making it clearer."
+    },
+    {
+      "name": "defensive-playbook-review",
+      "category": "ir",
+      "path": "Skills/ir/defensive-playbook-review",
+      "description": "Reviews an incident response playbook, runbook or SOP written by a team for missing steps, unclear ownership, unsafe or irreversible actions without approval gates, evidence-preservation gaps, and communication and legal touchpoints. Use when someone shares a playbook or runbook (ransomware, BEC, account compromise, malware, insider, cloud) and asks for review, gaps, or a tabletop walk-through."
+    },
+    {
+      "name": "defensive-post-incident-review",
+      "category": "ir",
+      "path": "Skills/ir/defensive-post-incident-review",
+      "description": "Helps a team prepare, facilitate and write up a blameless post-incident review (lessons learned, retrospective, after-action review) by structuring the discussion, separating contributing factors from blame, and turning findings into owned actions. Use when someone is planning or writing a post-incident review, retro or after-action report for a security incident or near miss."
+    },
+    {
+      "name": "defensive-timeline-review",
+      "category": "ir",
+      "path": "Skills/ir/defensive-timeline-review",
+      "description": "Reviews an investigator's incident timeline or attack narrative for gaps, ordering errors, timezone problems, unsupported links between events, and alternative explanations. Use when someone shares an incident timeline, super-timeline extract, kill-chain reconstruction or \"here's what I think happened\" and asks for a sanity check or what they might be missing."
+    },
+    {
+      "name": "defensive-analyst-coach",
+      "category": "people",
+      "path": "Skills/people/defensive-analyst-coach",
+      "description": "A Socratic coach that develops a defender's own investigative judgement instead of giving answers. Use when someone says \"coach me\", \"teach me\", \"quiz me\", \"let me try first\", \"don't give me the answer\", is a junior or student analyst practising triage or forensics, wants to prepare for a certification, or a team lead wants practice scenarios for their analysts."
+    },
+    {
+      "name": "defensive-security-writing-review",
+      "category": "people",
+      "path": "Skills/people/defensive-security-writing-review",
+      "description": "Improves the clarity, accuracy and tone of an analyst's own security writing \u2014 case notes, alert descriptions, shift handoffs, tickets, emails to users or clients, and updates to managers \u2014 without changing the technical facts. Use when someone pastes a security-related draft and asks to \"make this better\", \"reword\", \"make it clearer\", \"make it shorter\" or \"make it less technical\"."
+    },
+    {
+      "name": "defensive-ai-output-check",
+      "category": "soc",
+      "path": "Skills/soc/defensive-ai-output-check",
+      "description": "Helps an analyst critically verify a verdict, summary or recommendation produced by another AI or automated security tool (AI SOC triage, copilot summaries, auto-closed alerts, SOAR enrichment, vendor \"AI analyst\" output) before relying on it. Use when someone pastes an AI-generated triage verdict, incident summary or recommendation and asks whether to trust it, or wants to audit auto-closed alerts."
+    },
+    {
+      "name": "defensive-alert-triage-companion",
+      "category": "soc",
+      "path": "Skills/soc/defensive-alert-triage-companion",
+      "description": "A second pair of eyes for security alert triage. Use when an analyst pastes an alert, detection hit or case and asks for help triaging, scoping, prioritising or deciding whether to escalate. Organises evidence for and against each hypothesis, surfaces missing context and next checks, and hands the true/false-positive and escalation decision back to the analyst."
+    },
+    {
+      "name": "defensive-command-explainer",
+      "category": "soc",
+      "path": "Skills/soc/defensive-command-explainer",
+      "description": "Explains suspicious command lines, scripts and encoded strings found in EDR, SIEM or process telemetry so an analyst can judge them. Use when someone pastes a PowerShell, cmd, bash, WMI, LOLBin or obfuscated command and asks \"what does this do\", \"explain this\", \"decode this\" or \"is this malicious\". Interprets and decodes safely; never executes; leaves the verdict to the analyst."
+    },
+    {
+      "name": "defensive-log-interpreter",
+      "category": "soc",
+      "path": "Skills/soc/defensive-log-interpreter",
+      "description": "Explains raw log entries and event records (Windows Security and Sysmon events, Linux auth/audit logs, cloud audit logs, proxy/firewall/DNS logs) field by field so an analyst understands what was recorded and what it does and doesn't prove. Use when someone pastes log lines and asks what they mean, what an event ID is, or what happened."
+    },
+    {
+      "name": "defensive-phishing-review",
+      "category": "soc",
+      "path": "Skills/soc/defensive-phishing-review",
+      "description": "Helps an analyst review a reported email, its headers, links, attachments metadata, or suspicious mailbox rules for signs of phishing or business email compromise. Use when someone pastes email headers or content, a user-reported phish, an inbox/forwarding rule, or asks \"is this email legit\". Lays out indicators for and against without visiting links or opening attachments; the analyst decides."
+    }
+  ]
+}
